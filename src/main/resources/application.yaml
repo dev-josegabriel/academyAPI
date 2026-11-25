@@ -6,7 +6,7 @@ spring:
     name: academyAPI
 
   datasource:
-    url: jdbc:mysql://localhost:3306/gym_db?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3307/gym_db?createDatabaseIfNotExist=true
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
@@ -14,3 +14,6 @@ spring:
     hibernate:
       ddl-auto: create-drop
     show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
