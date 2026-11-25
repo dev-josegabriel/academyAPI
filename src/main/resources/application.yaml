@@ -1,3 +1,16 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: academyAPI
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/gym_db?createDatabaseIfNotExist=true
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
